@@ -2,7 +2,9 @@
 
 
 @font-face{
-    font-family: 'Abyssinica SIL', serif;}
+   font-family: 'Abyssinica SIL', serif;
+  src: url(../fonts/Abyssinica_SIL/AbyssinicaSIL-Regular.ttf);}
+  
 
 /* L'étoile donne du style à TOUS les éléments */
 /* * {
@@ -276,7 +278,7 @@ body {
   }
   
   /* RESPONSIVE  */
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width:1440px) {
     .grid-container {
       display: block;
     }
@@ -284,10 +286,13 @@ body {
       width: 40%;
     }
   }
-  @media (max-width: 767px) {
-    body {
-        font-size: 14px;
-    }
+ 
+/* Styles pour les écrans de grande taille (desktops) */
+@media (min-width: 576px) {
+  body {
+      font-size: 14px;
+  }
+
     .flexbox ul {
       flex-direction: column;
       align-items: center;
@@ -309,9 +314,3 @@ body {
   }
 
 
-
-/* Styles pour les écrans de grande taille (desktops) */
-@media (min-width: 768px) {
-  body {
-      font-size: 18px;
-  }
